@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { prisma } from "./utils/db";
 import { BlogPostCard } from "@/components/general/BlogPostCard";
 import { Suspense } from "react";
@@ -46,6 +44,7 @@ async function BlogPosts() {
   );
 }
 
+// Skeleton
 function BlogPostsGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

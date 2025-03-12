@@ -1,6 +1,5 @@
 "use server";
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
-import { BlogPost } from './../node_modules/.prisma/client/index.d';
 import { prisma } from './utils/db';
 import { redirect } from 'next/navigation';
 export async function handleSubmisison(formData: FormData) {

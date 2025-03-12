@@ -4,7 +4,7 @@ import {
   LoginLink,
   LogoutLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
-import { Button, buttonVariants } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
 export default async function Navbar() {
