@@ -15,7 +15,7 @@ export async function handleSubmisison(formData: FormData) {
     const content = formData.get('content');
     const url = formData.get('url');
 
-    const data = await prisma.blogPost.create({
+    await prisma.blogPost.create({
       data: {
         title: title as string,
         content: content as string,
@@ -27,8 +27,4 @@ export async function handleSubmisison(formData: FormData) {
     });
 
     return redirect("/dashboard");
-}
-
-export async function yoo() {
-    console.log("yooo");
 }
